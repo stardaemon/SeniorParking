@@ -1,0 +1,150 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="layout.ParkingInfo">
+
+    <ImageView
+        android:id="@+id/car_image"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:srcCompat="@android:drawable/ic_menu_report_image" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="Time"
+        android:layout_marginTop="190dp"
+        android:layout_marginLeft="40dp"/>
+
+    <Spinner
+        android:id="@+id/spinner_hour"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginLeft="165dp"
+        android:layout_marginTop="190dp"
+        android:entries="@array/hour" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginLeft="215dp"
+        android:layout_marginTop="190dp"
+        android:text="Hours"/>
+
+    <Spinner
+        android:id="@+id/spinner_minute"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginLeft="255dp"
+        android:layout_marginTop="190dp"
+        android:entries="@array/minute" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginLeft="310dp"
+        android:layout_marginTop="190dp"
+        android:text="Minutes"/>
+
+
+    <TextView
+        android:id="@+id/level"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="Level"
+        android:layout_marginTop="230dp"
+        android:layout_marginLeft="40dp"/>
+
+    <Spinner
+        android:id="@+id/spinner_level"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="230dp"
+        android:entries="@array/level"
+        android:prompt="@string/level_prompt"/>
+
+    <TextView
+        android:id="@+id/color"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="280dp"
+        android:text="Color" />
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="400dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="280dp"
+        android:orientation="horizontal"
+        android:id="@+id/radioGroup">
+
+        <RadioButton android:id="@+id/radio_blue"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="80dp"
+            android:text="blue"
+            android:textColor="#FF33B5E5" />
+        <RadioButton android:id="@+id/radio_yellow"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="yellow"
+            android:textColor="#FFFFBB33"
+            android:layout_marginLeft="10dp" />
+        <RadioButton android:id="@+id/radio_red"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="red"
+            android:textColor="#FF4444"
+            android:layout_marginLeft="10dp" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="320dp"
+        android:layout_weight="1"
+        android:text="Number" />
+
+    <Spinner
+        android:id="@+id/spinner_number"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="320dp"
+        android:entries="@array/number"
+        android:prompt="@string/number_prompt"/>
+
+
+    <TextView
+        android:id="@+id/letter"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="360dp"
+        android:layout_weight="1"
+        android:text="Letter" />
+
+    <Spinner
+        android:id="@+id/spinner_letter"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="360dp"
+        android:entries="@array/letter"
+        android:prompt="@string/letter_prompt"/>
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_marginTop="400dp"
+        android:layout_marginLeft="300dp"/>
+</FrameLayout>
